@@ -5,7 +5,7 @@ module.exports = React.createClass({
   render: function () {
     return (
       <div className='todoList'>
-        I am a TodoList
+        I am a TodoList.
       </div>
     )
   }
