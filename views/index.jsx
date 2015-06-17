@@ -1,7 +1,7 @@
 var React = require('react')
 
-var Hi = React.createClass({
-  displayName: 'Hi',
+var todoBox = React.createClass({
+  displayName: 'todoBox',
   propTypes: {
     age: React.PropTypes.number.isRequired,
     color: React.PropTypes.string.isRequired,
@@ -9,12 +9,11 @@ var Hi = React.createClass({
   },
   render: function () {
     return (
-      <div>
-        Hello {this.props.name} <br />
-        Your age is {this.props.age} and your colour is {this.props.color}
+      <div className="todoBox">
+        Hello, world!
       </div>
     )
   }
 })
 
-module.exports = Hi
+module.exports = todoBox

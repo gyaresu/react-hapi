@@ -3,7 +3,7 @@ var engine = require('hapi-react')()
 var path = require('path')
 
 var server = new Hapi.Server(0)
-server.connection({port: 3000})
+server.connection({port: (process.argv[2] || 3000)})
 
 var hi = {
       name: 'Human',
