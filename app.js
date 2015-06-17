@@ -5,6 +5,11 @@ var path = require('path')
 var server = new Hapi.Server(0)
 server.connection({port: 3000})
 
+var hi = {
+      name: 'Human',
+      age: 112,
+      color: 'red'
+      }
 
 server.views({
   defaultExtension: 'jsx',
@@ -19,9 +24,7 @@ server.route({
   method: 'GET',
   path: '/',
   handler: function (req, res) {
-    res.view('index', {
-      name: 'Gareth'
-    })
+    res.view('index', hi)
   }
 })
 
